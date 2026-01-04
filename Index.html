@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Event Scheduler</title>
+  <link rel="stylesheet" href="script.css">
+</head>
+<body>
+
+<h1>Event Scheduler</h1>
+
+<div id="controls">
+  <select id="filter">
+    <option value="all">All</option>
+    <option value="online">Online</option>
+    <option value="offline">Offline</option>
+    <option value="long">Long (>1h)</option>
+    <option value="conflict">Conflicts</option>
+  </select>
+
+  <select id="sort">
+    <option value="start">Start Time</option>
+    <option value="duration">Duration</option>
+    <option value="title">Title</option>
+  </select>
+
+  <button id="bulk-action">Resolve Conflicts</button>
+</div>
+
+<section id="stats"></section>
+<section id="event-list"></section>
+
+<hr />
+
+<h3>Create Event</h3>
+<input id="title" placeholder="Title" />
+<input id="start" type="datetime-local" />
+<input id="end" type="datetime-local" />
+<label>
+  <input type="checkbox" id="online" /> Online
+</label>
+<button id="add">Add Event</button>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Event Scheduler</title>
+</head>
+<body>
+
+<h1>Event Scheduler</h1>
+
+<div id="controls">
+  <select id="filter">
+    <option value="all">All</option>
+    <option value="online">Online</option>
+    <option value="offline">Offline</option>
+    <option value="long">Long (>1h)</option>
+    <option value="conflict">Conflicts</option>
+  </select>
+
+  <select id="sort">
+    <option value="start">Start Time</option>
+    <option value="duration">Duration</option>
+    <option value="title">Title</option>
+  </select>
+
+  <button id="bulk-action">Resolve Conflicts</button>
+</div>
+
+<section id="stats"></section>
+<section id="event-list"></section>
+
+<hr />
+
+<h3>Create Event</h3>
+<input id="title" placeholder="Title" />
+<input id="start" type="datetime-local" />
+<input id="end" type="datetime-local" />
+<label>
+  <input type="checkbox" id="online" /> Online
+</label>
+<button id="add">Add Event</button>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
